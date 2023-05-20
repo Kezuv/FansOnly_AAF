@@ -1,4 +1,4 @@
-package com.example.fansonly;
+package at.ac.fansonly;
 
 import java.io.*;
 

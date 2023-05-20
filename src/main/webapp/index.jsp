@@ -5,7 +5,7 @@
     <title>JSP - Hello World</title>
 </head>
 <body>
-<h1><%= "Hello World! Das hier wird mal FansOnly!" %>
+<h1 class="text-onlyFansBlue"><%= "Hello World! Das hier wird mal FansOnly!" %>
 </h1>
 <br/>
 <a href="hello-servlet">Hello Servlet</a>
