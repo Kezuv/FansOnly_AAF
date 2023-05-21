@@ -1,0 +1,102 @@
+.text-onlyFansBlue{
+    -fx-text-fill: #0cc0df;
+}
+.container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+}
+
+.top-left {
+    grid-column: 1;
+    grid-row: 1;
+    width: 200px;
+    height: 90px;
+    /* Stil für das Bild */
+}
+
+.left {
+    grid-column: 1;
+    grid-row: 2;
+    width: 200px;
+    background-color: lightgrey;
+    /* Stil für den linken Bereich */
+}
+
+.top-right {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+    height: 90px;
+    background-color: #0cc0df;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    /* Stil für den rechten Bereich */
+}
+.top-right-upper-left {
+    margin-right: 10px;
+}
+.top-right-upper-right{
+    margin-left: auto;
+}
+.menu {
+    display: flex;
+    align-items: center;
+}
+.menu-item {
+    margin-right: 10px;
+}
+.submenu {
+    position: relative;
+}
+.submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    padding: 10px;
+}
+.submenu:hover .submenu-content {
+    display: block;
+}
+.username{
+    display: inline;
+}
+.main {
+    grid-column: 2;
+    grid-row: 2;
+    /* Stil für den Hauptbereich */
+}
+.logo{
+    width: 200px;
+    height: 90px;
+}
+.blockTextSearch{
+    background-color: white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.text-area{
+    height: 100px;
+}
+.blockSearch{
+    background-color: lightgrey;
+    border-bottom: 1px solid black;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+.searchTitle{
+    /*Search headers*/
+}
+.searchAccordion {
+    display: none;
+}
+
+.searchAccordion.open {
+    display: block;
+}
+
+.searchButton {
+    /*Formating*/
+}
