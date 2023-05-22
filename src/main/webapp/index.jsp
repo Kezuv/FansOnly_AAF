@@ -9,7 +9,7 @@
 <div class="container">
     <div class="top-left">
         <!-- Hier kommt Ihr Bild -->
-        <img src="${pageContext.request.contextPath}/images/logo.png" alt="Logo" class="logo">
+        <img src="styles/images/logo.png" alt="Logo" class="logo">
     </div>
     <div class="left">
         <h2 class="searchHeader">Search for your Fan!</h2>
