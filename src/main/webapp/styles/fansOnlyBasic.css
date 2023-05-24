@@ -167,6 +167,10 @@ main {
 }
 
 .loginButton {
+    display: block;
+    width: 200%;
+    margin-bottom: 15px;
+    text-align: center;
     background-color: #0cc0df;
 }
 
@@ -204,4 +208,29 @@ main {
     border: 1px solid #ccc;
     border-radius: 5px;
     flex: 1;
+}
+
+.product-article {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 16px;
+    width: 100%;
+    margin: 8px;
+}
+
+.image-wrapper {
+    padding: 10px;
+    float: left;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+}
+
+.image {
+    border-radius: 16px;
+    max-height: 200px;
+    max-width: 200px;
 }

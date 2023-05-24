@@ -94,13 +94,13 @@
                         </div>
 
                 </div>
-                <a href="login.jsp" id="logoutButton"><button>Logout</button></a>
+                <button id="logoutButton">Logout</button>
             </div>
         </div>
 </nav>
     <div class="main">
         <!-- Hauptbereich -->
-        <article class="product-article">
+        <article>
             <div class="content">
                 <div class="image-wrapper">
                     <img src="styles/images/AEG_T_VL553_Main.png" class="image">
@@ -118,7 +118,7 @@
                 </div>
             </div>
         </article>
-        <article class="product-article">
+        <article>
             <div class="content">
                 <div class="image-wrapper">
                     <img src="styles/images/Rowenta_VU5870_Main.png" class="image">
@@ -136,7 +136,7 @@
             </div>
         </article>
 
-        <article class="product-article">
+        <article >
             <div class="content">
                 <div class="image-wrapper">
                     <img src="styles/images/Xiaomi_Mi_Smart_Main.png" class="image">
@@ -153,7 +153,7 @@
                 </div>
             </div>
         </article>
-        <article class="product-article">
+        <article >
             <div class="content">
                 <div class="image-wrapper">
                     <img src="styles/images/Arctic%20Air%20TischventilatorLuftkühler.png" class="image">
@@ -168,7 +168,7 @@
                 </div>
             </div>
         </article>
-        <article class="product-article">
+        <article >
             <div class="content">
                 <div class="image-wrapper">
                     <img src="styles/images/DeWalt%20Akku%20Tischventilator.png" class="image">
@@ -184,7 +184,7 @@
                 </div>
             </div>
         </article>
-        <article class="product-article" >
+        <article >
             <div class="content">
                 <div class="image-wrapper">
                     <img src="styles/images/Hama%20Metall%20XXL%20USB-Tischventilator.png" class="image">
