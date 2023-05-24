@@ -12,7 +12,7 @@
   <title>loginWindow</title>
 </head>
 <body >
-<div class="containerLogin">
+<article class="containerLogin">
   <div class="loginWindow">
     <h2 >Login</h2>
     <form>
@@ -57,6 +57,6 @@
     </div>
   </div>
 
-</div>
+</article>
 </body>
 </html>

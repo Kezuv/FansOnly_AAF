@@ -1,94 +1,114 @@
-.text-onlyFansBlue{
-    color: #0cc0df;
-}
-.container {
+.main_container {
     display: grid;
     grid-template-columns: auto 1fr;
     grid-template-rows: auto 1fr;
     height: 100vh;
+    background-color: white;
+    grid-template-areas:
+    "l h"
+    "f m";
 }
 
-.top-left {
-    grid-column: 1;
-    grid-row: 1;
-    width: 200px;
-    height: 90px;
-    /* Stil für das Bild */
+.circleLogo {
+    grid-area: l;
+    width: auto;
+    height: 120px;
+    border-radius: 50%;
+    border-color: #0cc0df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.left {
-    grid-column: 1;
-    grid-row: 2;
-    width: 200px;
-    background-color: lightgrey;
+.filters {
+    grid-area: f;
+    width: 210px;
+    background-color: lightgray;
     /* Stil für den linken Bereich */
 }
 
-.top-right {
-    grid-column: 2;
-    grid-row: 1 / span 2;
-    height: 90px;
+.UserInfo {
+    grid-area: h;
+    height: 120px;
     background-color: #0cc0df;
     display: flex;
     justify-content: space-between;
     align-items: center;
+    align-content: flex-end;
     /* Stil für den rechten Bereich */
 }
-.top-right-upper-left {
-    margin-right: 10px;
-}
-.top-right-upper-right{
-    margin-left: auto;
-}
-.menu {
+
+nav.UserInfo {
     display: flex;
     align-items: center;
+    justify-content: flex-end;
 }
-.menu-item {
-    margin-right: 10px;
+
+nav.UserInfo .menu-item {
+    margin-right: 30px;
+    margin-bottom: 7px;
+    align-self: flex-end;
 }
-.submenu {
-    position: relative;
+
+nav.UserInfo .submenu {
+    position: inherit;
+    margin-bottom: 7px;
 }
-.submenu-content {
+
+nav.UserInfo .submenu-content {
     display: none;
-    position: absolute;
     background-color: #f9f9f9;
     min-width: 120px;
-    padding: 10px;
 }
-.submenu:hover .submenu-content {
-    display: block;
+
+main {
+    grid-area: m;
+    align-self: center;
 }
-.username{
+.username {
     display: inline;
 }
-.main {
-    grid-column: 2;
-    grid-row: 2;
-    /* Stil für den Hauptbereich */
+
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    height: 100px;
 }
-.logo{
-    width: 200px;
-    height: 90px;
-}
-.blockTextSearch{
+
+.blockTextSearch {
     background-color: white;
     padding-bottom: 10px;
     margin-bottom: 10px;
 }
-.text-area{
+
+.searchHeader{
+    color: #0cc0df;
+}
+
+.text-area {
     height: 100px;
 }
-.blockSearch{
-    background-color: lightgrey;
-    border-bottom: 1px solid black;
+
+.blockSearch {
+    background-color: lightgray;
+    border-bottom: 1px solid #0cc0df;
     padding-bottom: 10px;
     margin-bottom: 10px;
+
 }
-.searchTitle{
+
+.blockSearch h3 {
+    font-family: "Trebuchet MS", sans-serif;
+    align-items: center;
+}
+
+.searchTitle {
+    align-content: center;
     /*Search headers*/
 }
+
 .searchAccordion {
     display: none;
 }
@@ -98,21 +118,23 @@
 }
 
 .searchButton {
-    /*Formating*/
+    /*Formatting*/
 }
+
 .containerLogin {
-    max-width: 800px;
-    margin: 0 auto;
+    width: auto;
+    height: auto;
+    margin:  auto;
     padding: 20px;
     background-color: #ccc8c8;
     border: 1px solid #0cc0df;
     border-radius: 5px;
     box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     display: flex;
+    flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
 }
-
 
 .loginWindow {
     margin-bottom: 20px;
@@ -152,7 +174,6 @@
     background-color: #0cc0df;
 }
 
-
 .latestInteractions {
     margin-top: 20px;
 }
@@ -174,6 +195,7 @@
     align-items: center;
     font-weight: bold;
 }
+
 
 .interaction {
     background-color: #fff;

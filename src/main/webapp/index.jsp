@@ -6,77 +6,49 @@
     <link rel="stylesheet" type="text/css" href="styles/fansOnlyBasic.css">
 </head>
 <body>
-<div class="container">
-    <div class="top-left">
+<article class="main_container">
+    <div class="circleLogo">
         <!-- Hier kommt Ihr Bild -->
-        <img src="styles/images/logo.png" alt="Logo" class="logo">
+        <img src="styles/images/FOlogo.png" alt="Logo" class="logo">
     </div>
-    <div class="left">
-        <h2 class="searchHeader">Search for your Fan!</h2>
-        <!-- Linker Bereich -->
-        <div class="blockTextSearch">
-            <h3 class="searchTitle">Keyword</h3>
-            <!-- Textfeld und Button -->
-            <textarea id="textfield">Searching fans...</textarea>
-            <!--onclick="clearText()"-->
-            <!--Function for JS function clearText() {
-            var textarea = document.getElementById('textfield');
-            if (textarea.value === 'Searching fans...') {
-            textarea.value = '';
-            }
-            }-->
-        </div>
 
-        <div class="blockSearch">
-            <h3 class="searchTitle">Price</h3>
-            <div class="searchAccordion">
-                <!-- Function in JS -> function toggleAccordion(element) {
-                element.nextElementSibling.classList.toggle('open');
-                }-->
-                <!-- Slider -->
+
+
+
+
+    <div class="filters">
+        <h2 class="searchHeader">Find for your Fan!</h2>
+
+        <form>
+            <div class="blockSearch">
+                <h3 class="searchTitle">Price</h3>
                 <input type="range" id="slider" min="0" max="1000" value="250">
-                <div class="valueRange">
-                    <label for="sliderMin">from:</label>
-                    <input type="text" id="sliderMin" readonly>
-                    <label for="sliderMax">to:</label>
-                    <input type="text" id="sliderMax" readonly>
-                </div>
+
             </div>
-        </div>
-        <div class="blockSearch">
-            <h3 class="searchTitle">Properties</h3>
-            <div class="searchAccordion">
-                <!-- Function in JS -> function toggleAccordion(element) {
-                element.nextElementSibling.classList.toggle('open');
-                }-->
-                <!-- Checkbox mit mehrfacher Auswahl -->
-                <label><input type="checkbox" name="Option 1" value="Option 1"> Portable</label><br>
-                <label><input type="checkbox" name="Option 2" value="Option 2"> Smart Home</label><br>
-                <label><input type="checkbox" name="Option 3" value="Option 3"> Remote</label>
+
+            <div class="blockSearch">
+                <h3 class="searchTitle">Properties</h3>
+                <label><input type="checkbox" name="option1" value="Option 1"> Portable</label><br>
+                <label><input type="checkbox" name="option2" value="Option 2"> Smart Home</label><br>
+                <label><input type="checkbox" name="option3" value="Option 3"> Remote</label>
             </div>
-        </div>
-        <div class="blockSearch">
-            <h3 class="searchTitle">Color</h3>
-            <div class="searchAccordion">
-                <!-- Function in JS -> function toggleAccordion(element) {
-                element.nextElementSibling.classList.toggle('open');
-                }-->
-                <!-- Dropdown-Menü -->
-                <select id="Color">
+
+            <div class="blockSearch">
+                <h3 class="searchTitle">Color</h3>
+                <select id="color">
                     <option value="option1">White</option>
                     <option value="option2">Chrome/Silver</option>
                     <option value="option3">Others</option>
                 </select>
             </div>
-        </div>
-        <br>
-        <div class="blockSearch">
-            <button class="searchButton">Search</button>
-        </div>
+
+            <div class="blockSearch">
+                <button class="searchButton">Search</button>
+            </div>
+        </form>
     </div>
-    <div class="top-right">
+    <nav class="UserInfo">
         <!-- Rechter Bereich -->
-        <div class="menu">
             <!--Following implementation for userlogin in JS
             // User logged in?
             var isLoggedIn = true; // Checking the login status
@@ -102,35 +74,79 @@
 
             var lastLoginTimeElement = document.getElementById('lastLoginTime');
             lastLoginTimeElement.textContent = lastLoginTime;-->
-            <div class="top-right-upper-left">
-                Last Login: <span id="lastLoginTime"></span>
-            </div>
+
+
             <!--<div id="loginMenu" class="menu-item">
                 <button id="loginButton">Login</button>
             </div>-->
             <div id="loggedInMenu" class="menu-item">
-                <div class="top-right-upper-right">
+
                     <!-- Feld für den angemeldeten Benutzernamen oben rechts -->
-                    Logged in as
-                    <div id="username" class="username"></div>
+                <div>
+                    <div class="circle">UN</div>
                 </div>
-                <div class="top-right-upper-right">
+
                     <div class="submenu">
                         <button id="favoritesButton">Preferences</button>
                         <div class="submenu-content">
-                            <a href="#">List</a>
-                            <a href="#">Product</a>
+                            <a href="#">Comparison List</a>
+                            <a href="#">Marked Fans</a>
                         </div>
-                    </div>
+
                 </div>
                 <button id="logoutButton">Logout</button>
             </div>
         </div>
-    </div>
+</nav>
     <div class="main">
         <!-- Hauptbereich -->
-        Main-Area
+        <article class="containerLogin">
+            <div class="loginWindow">
+                <h2 >Login</h2>
+                <form>
+                    <div>
+                        <label for="username">Username</label>
+                        <input width="200" type="text" id="username" name="username" required>
+                    </div>
+                    <div>
+                        <label for="password">Password</label>
+                        <input width="200" type="password" id="password" name="password" required>
+                    </div>
+                    <div>
+                        <input class = "loginButton" type="submit" value="Login">
+                        <input class = "registerButton" type="submit" value="Register">
+                    </div>
+                </form>
+            </div>
+            <div class="latestInteractions">
+                <div>
+                    <div class="circle">AB</div>
+                    <div class="interaction">Product name.. User's comment on the product :) </div>
+                </div>
+                <div>
+                    <div class="circle">CD</div>
+                    <div class="interaction">Product name.. User's comment on the product :)</div>
+                </div>
+                <div>
+                    <div class="circle">EF</div>
+                    <div class="interaction">Product name.. User's comment on the product :)</div>
+                </div>
+                <div>
+                    <div class="circle">GH</div>
+                    <div class="interaction">Product name.. User's comment on the product :)</div>
+                </div>
+                <div>
+                    <div class="circle">KI</div>
+                    <div class="interaction">Product name.. User's comment on the product :)</div>
+                </div>
+                <div>
+                    <div class="circle">LM</div>
+                    <div class="interaction">Product name.. User's comment on the product :)</div>
+                </div>
+            </div>
+
+        </article>
     </div>
-</div>
+</article>
 </body>
 </html>
