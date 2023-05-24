@@ -1,3 +1,8 @@
+.FansOnlyGlobal {
+    font-family: "Bodoni 72 Oldstyle";
+    align-items: center;
+}
+
 .main_container {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -7,9 +12,10 @@
     grid-template-areas:
     "l h"
     "f m";
+
 }
 
-.circleLogo {
+.main_container .circleLogo {
     grid-area: l;
     width: auto;
     height: 120px;
@@ -20,10 +26,12 @@
     align-items: center;
 }
 
-.filters {
+.main_container .filters {
     grid-area: f;
     width: 210px;
+    justify-content: flex-start;
     background-color: lightgray;
+
     /* Stil für den linken Bereich */
 }
 
@@ -32,10 +40,9 @@
     height: 120px;
     background-color: #0cc0df;
     display: flex;
-    justify-content: space-between;
+    justify-content: flex-end;
     align-items: center;
     align-content: flex-end;
-    /* Stil für den rechten Bereich */
 }
 
 nav.UserInfo {
@@ -45,23 +52,25 @@ nav.UserInfo {
 }
 
 nav.UserInfo .menu-item {
-    margin-right: 30px;
-    margin-bottom: 7px;
-    align-self: flex-end;
+    display: flex;
+    margin-right: 20px;
+    align-items: flex-end;
 }
 
 nav.UserInfo .submenu {
-    position: inherit;
-    margin-bottom: 7px;
+    position: relative;
+
 }
 
 nav.UserInfo .submenu-content {
     display: none;
+    position: absolute;
     background-color: #f9f9f9;
     min-width: 120px;
+    padding: 10px;
 }
 
-main {
+.main_container main {
     grid-area: m;
     align-self: center;
 }
@@ -84,7 +93,7 @@ main {
 }
 
 .searchHeader{
-    color: #0cc0df;
+    color: #000000;
 }
 
 .text-area {
@@ -93,7 +102,7 @@ main {
 
 .blockSearch {
     background-color: lightgray;
-    border-bottom: 1px solid #0cc0df;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
     padding-bottom: 10px;
     margin-bottom: 10px;
 
@@ -192,12 +201,13 @@ main {
     width: 40px;
     height: 40px;
     border-radius: 50%;
-    background-color: #0cc0df;
-    color: #fff;
+    background-color: #fff;
+    color: #0cc0df;
     display: flex;
     justify-content: center;
     align-items: center;
     font-weight: bold;
+    margin-right: 10px;
 }
 
 

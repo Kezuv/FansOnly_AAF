@@ -5,7 +5,7 @@
     <title>Meine 4-geteilte Startseite</title>
     <link rel="stylesheet" type="text/css" href="styles/fansOnlyBasic.css">
 </head>
-<body>
+<body class="FansOnlyGlobal">
 <article class="main_container">
     <div class="circleLogo">
         <!-- Hier kommt Ihr Bild -->
@@ -17,20 +17,22 @@
 
 
     <div class="filters">
-        <h2 class="searchHeader">Find for your Fan!</h2>
+        <h2 class="searchHeader">Find the Right Fan!</h2>
 
         <form>
             <div class="blockSearch">
                 <h3 class="searchTitle">Price</h3>
                 <input type="range" id="slider" min="0" max="1000" value="250">
-
             </div>
 
             <div class="blockSearch">
-                <h3 class="searchTitle">Properties</h3>
+                <h3 class="searchTitle">Properties:</h3>
                 <label><input type="checkbox" name="option1" value="Option 1"> Portable</label><br>
                 <label><input type="checkbox" name="option2" value="Option 2"> Smart Home</label><br>
-                <label><input type="checkbox" name="option3" value="Option 3"> Remote</label>
+                <label><input type="checkbox" name="option3" value="Option 3"> Remote</label><br>
+                <!-- Add more checkboxes for additional properties -->
+                <label><input type="checkbox" name="option4" value="Option 4"> Energy Efficient</label><br>
+                <label><input type="checkbox" name="option5" value="Option 5"> Oscillating</label>
             </div>
 
             <div class="blockSearch">
@@ -39,25 +41,19 @@
                     <option value="option1">White</option>
                     <option value="option2">Chrome/Silver</option>
                     <option value="option3">Black</option>
-                    <option value="option3">Other</option>
+                    <option value="option4">Other</option>
                 </select>
             </div>
+
             <div class="blockSearch">
                 <h3 class="searchTitle">Keyword</h3>
-                <!-- Textfeld und Button -->
                 <textarea id="textfield">Searching fans...</textarea>
-                <!--onclick="clearText()"-->
-                <!--Function for JS function clearText() {
-                var textarea = document.getElementById('textfield');
-                if (textarea.value === 'Searching fans...') {
-                textarea.value = '';
-                }
-                }-->
                 <p></p>
                 <button class="searchButton">Search</button>
             </div>
         </form>
     </div>
+
     <nav class="UserInfo">
         <!-- Rechter Bereich -->
             <!--Following implementation for userlogin in JS
@@ -96,7 +92,6 @@
                 <div>
                     <div class="circle">UN</div>
                 </div>
-
                     <div class="submenu">
                         <button id="favoritesButton">Preferences</button>
                         <div class="submenu-content">
