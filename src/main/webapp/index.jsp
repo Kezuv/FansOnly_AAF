@@ -38,11 +38,22 @@
                 <select id="color">
                     <option value="option1">White</option>
                     <option value="option2">Chrome/Silver</option>
-                    <option value="option3">Others</option>
+                    <option value="option3">Black</option>
+                    <option value="option3">Other</option>
                 </select>
             </div>
-
             <div class="blockSearch">
+                <h3 class="searchTitle">Keyword</h3>
+                <!-- Textfeld und Button -->
+                <textarea id="textfield">Searching fans...</textarea>
+                <!--onclick="clearText()"-->
+                <!--Function for JS function clearText() {
+                var textarea = document.getElementById('textfield');
+                if (textarea.value === 'Searching fans...') {
+                textarea.value = '';
+                }
+                }-->
+                <p></p>
                 <button class="searchButton">Search</button>
             </div>
         </form>
