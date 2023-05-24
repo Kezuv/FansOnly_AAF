@@ -1,3 +1,10 @@
+.fansOnly{
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.fansOnly h1{
+    font-size: 25px;
+}
 .main_container {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -84,7 +91,7 @@ main {
 }
 
 .searchHeader{
-    color: #0cc0df;
+    color: #000000;
 }
 
 .text-area {
@@ -200,6 +207,9 @@ main {
     font-weight: bold;
 }
 
+.fansOnlyBtn{
+    background-color: #0cc0df;
+}
 
 .interaction {
     background-color: #fff;
@@ -215,22 +225,33 @@ main {
     display: flex;
     align-items: center;
     border-radius: 16px;
-    padding: 16px;
+    padding: 5px;
     width: 100%;
-    margin: 8px;
+    margin: 20px;
 }
 
+.content{
+    display: flex;
+    justify-content: space-between;
+    alignment: center;
+    width: 80%;
+    padding: 10px;
+}
 .image-wrapper {
     padding: 10px;
-    float: left;
-    display: flex;
+    min-width: 250px;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    display: flex;
 }
 
 .image {
     border-radius: 16px;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.text {
+    flex-grow: 1;
+    padding-left: 10px;
 }

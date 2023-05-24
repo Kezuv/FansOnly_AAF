@@ -4,8 +4,10 @@
 <head>
     <title>Meine 4-geteilte Startseite</title>
     <link rel="stylesheet" type="text/css" href="styles/fansOnlyBasic.css">
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
 </head>
-<body>
+<body class="fansOnly">
 <article class="main_container">
     <div class="circleLogo">
         <!-- Hier kommt Ihr Bild -->
@@ -17,7 +19,7 @@
 
 
     <div class="filters">
-        <h2 class="searchHeader">Find for your Fan!</h2>
+        <h1 class="searchHeader">Find for your Fan!</h1>
 
         <form>
             <div class="blockSearch">
@@ -27,14 +29,14 @@
             </div>
 
             <div class="blockSearch">
-                <h3 class="searchTitle">Properties</h3>
+                <h1 class="searchTitle">Properties</h1>
                 <label><input type="checkbox" name="option1" value="Option 1"> Portable</label><br>
                 <label><input type="checkbox" name="option2" value="Option 2"> Smart Home</label><br>
                 <label><input type="checkbox" name="option3" value="Option 3"> Remote</label>
             </div>
 
             <div class="blockSearch">
-                <h3 class="searchTitle">Color</h3>
+                <h1 class="searchTitle">Color</h1>
                 <select id="color">
                     <option value="option1">White</option>
                     <option value="option2">Chrome/Silver</option>
@@ -43,7 +45,7 @@
                 </select>
             </div>
             <div class="blockSearch">
-                <h3 class="searchTitle">Keyword</h3>
+                <h1 class="searchTitle">Keyword</h1>
                 <!-- Textfeld und Button -->
                 <textarea id="textfield">Searching fans...</textarea>
                 <!--onclick="clearText()"-->
@@ -54,7 +56,7 @@
                 }
                 }-->
                 <p></p>
-                <button class="searchButton">Search</button>
+                <button class="btn btn-light">Search</button>
             </div>
         </form>
     </div>
@@ -98,14 +100,14 @@
                 </div>
 
                     <div class="submenu">
-                        <button id="favoritesButton">Preferences</button>
+                        <button id="favoritesButton" class="btn btn-light">Preferences</button>
                         <div class="submenu-content">
                             <a href="#">Comparison List</a>
                             <a href="#">Marked Fans</a>
                         </div>
 
                 </div>
-                <a href="login.jsp" id="logoutButton"><button>Logout</button></a>
+                <a href="login.jsp" id="logoutButton"><button class="btn btn-light">Logout</button></a>
             </div>
         </div>
 </nav>
@@ -127,6 +129,9 @@
                         <p><b>Abmessungen (BxHxT):</b> 255x750x260mm </p>
                     </div>
                 </div>
+                <div class="article-btn">
+                    <button class="btn btn-light fansOnlyBtn">Details</button>
+                </div>
             </div>
         </article>
         <article class="product-article">
@@ -143,6 +148,9 @@
                     <p><b>Schwenkbereich:</b> horizontal oszillierend (abschaltbar)</p>
                     <p><b>Ausstattung:</b> Timer für Abschaltautomatik (1/2/4/8h), Brisefunktion, Schlaffunktion, Fernbedienung, höhenverstellbar 134-145cm</p>
                     <p><b>Abmessungen (BxHxT):</b> 460x1340x430mm</p>
+                </div>
+                <div class="article-btn">
+                    <button class="btn btn-light fansOnlyBtn">Details</button>
                 </div>
             </div>
         </article>
@@ -162,6 +170,9 @@
                     <p><b>Ausstattung:</b> Timer für Abschaltautomatik, Akkubetrieb möglich (Betriebsdauer 16h), Brisefunktion (Luftstromvariator), App-Steuerung (Mi Home)  </p>
                     <p><b>Abmessungen (BxHxT):</b> 960mm   </p>
                 </div>
+                <div class="article-btn">
+                    <button class="btn btn-light fansOnlyBtn">Details</button>
+                </div>
             </div>
         </article>
         <article class="product-article">
@@ -176,6 +187,9 @@
                     <p><b>Regulierstufen:</b> 3 Geschwindigkeitsstufen</p>
                     <p><b>Ausstattung:</b> zuschaltbarer Luftkühler mit Wassertank, integrierter Luftfilter   </p>
                     <p><b>Abmessungen (BxHxT):</b> 350x350x400mm</p>
+                </div>
+                <div class="article-btn">
+                    <button class="btn btn-light fansOnlyBtn">Details</button>
                 </div>
             </div>
         </article>
@@ -193,6 +207,9 @@
                     <p><b>Ausstattung:</b> Akkubetrieb (Betriebsdauer 4h) </p>
                     <p><b>Flügeldurchmesser:</b> 17.6cm    </p>
                 </div>
+                <div class="article-btn">
+                    <button class="btn btn-light fansOnlyBtn">Details</button>
+                </div>
             </div>
         </article>
         <article class="product-article" >
@@ -207,6 +224,9 @@
                     <p><b>Flügeldurchmesser:</b> 15cm</p>
                     <p><b>Ausstattung:</b>Stromversorgung über USB</p>
                     <p><b>Abmessungen (BxHxT):</b> 18x20x19mm   </p>
+                </div>
+                <div class="article-btn">
+                    <button class="btn btn-light fansOnlyBtn">Details</button>
                 </div>
             </div>
         </article>
