@@ -1,8 +1,10 @@
-.FansOnlyGlobal {
-    font-family: "Bodoni 72 Oldstyle";
-    align-items: center;
+.fansOnly{
+    font-family: "Trebuchet MS", sans-serif;
 }
 
+.fansOnly h1{
+    font-size: 25px;
+}
 .main_container {
     display: grid;
     grid-template-columns: auto 1fr;
@@ -12,7 +14,6 @@
     grid-template-areas:
     "l h"
     "f m";
-
 }
 
 .main_container .circleLogo {
@@ -43,6 +44,7 @@
     justify-content: flex-end;
     align-items: center;
     align-content: flex-end;
+    /* Stil für den rechten Bereich */
 }
 
 nav.UserInfo {
@@ -210,6 +212,9 @@ nav.UserInfo .submenu-content {
     margin-right: 10px;
 }
 
+.fansOnlyBtn{
+    background-color: #0cc0df;
+}
 
 .interaction {
     background-color: #fff;
@@ -225,22 +230,33 @@ nav.UserInfo .submenu-content {
     display: flex;
     align-items: center;
     border-radius: 16px;
-    padding: 16px;
+    padding: 5px;
     width: 100%;
-    margin: 8px;
+    margin: 20px;
 }
 
+.content{
+    display: flex;
+    justify-content: space-between;
+    alignment: center;
+    width: 80%;
+    padding: 10px;
+}
 .image-wrapper {
     padding: 10px;
-    float: left;
-    display: flex;
+    min-width: 250px;
     justify-content: center;
     align-items: center;
-    height: 100%;
+    display: flex;
 }
 
 .image {
     border-radius: 16px;
-    max-height: 200px;
-    max-width: 200px;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.text {
+    flex-grow: 1;
+    padding-left: 10px;
 }
