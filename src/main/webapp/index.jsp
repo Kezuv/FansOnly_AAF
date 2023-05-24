@@ -23,12 +23,12 @@
 
         <form>
             <div class="blockSearch">
-                <h3 class="searchTitle">Price</h3>
+                <h1 class="searchTitle">Price</h1>
                 <input type="range" id="slider" min="0" max="1000" value="250">
             </div>
 
             <div class="blockSearch">
-                <h3 class="searchTitle">Properties:</h3>
+                <h1 class="searchTitle">Properties:</h1>
                 <label><input type="checkbox" name="option1" value="Option 1"> Portable</label><br>
                 <label><input type="checkbox" name="option2" value="Option 2"> Smart Home</label><br>
                 <label><input type="checkbox" name="option3" value="Option 3"> Remote</label><br>
@@ -48,7 +48,7 @@
             </div>
 
             <div class="blockSearch">
-                <h3 class="searchTitle">Keyword</h3>
+                <h1 class="searchTitle">Keyword</h1>
                 <textarea id="textfield">Searching fans...</textarea>
                 <p></p>
                 <button class="btn btn-light">Search</button>
@@ -95,14 +95,15 @@
                 </div>
 
                     <div class="submenu">
-                        <button id="favoritesButton" class="btn btn-light">Preferences</button>
+                        <button id="favoritesButton" class="btn btn-light; fansOnlyBtn">Preferences</button>
+                        <a href="login.jsp" id="logoutButton"><button class="btn btn-light; fansOnlyBtn">Logout</button></a>
                         <div class="submenu-content">
                             <a href="#">Comparison List</a>
                             <a href="#">Marked Fans</a>
                         </div>
 
                 </div>
-                <a href="login.jsp" id="logoutButton"><button class="btn btn-light">Logout</button></a>
+
             </div>
         </div>
 </nav>
