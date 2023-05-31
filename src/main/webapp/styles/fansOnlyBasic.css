@@ -1,0 +1,269 @@
+.fansOnly{
+    font-family: "Trebuchet MS", sans-serif;
+}
+
+.fansOnly h1{
+    font-size: 25px;
+}
+.main_container {
+    display: grid;
+    grid-template-columns: auto 1fr;
+    grid-template-rows: auto 1fr;
+    height: 100vh;
+    background-color: white;
+    grid-template-areas:
+    "l h"
+    "f m";
+}
+
+.main_container .circleLogo {
+    grid-area: l;
+    width: auto;
+    height: 120px;
+    border-radius: 50%;
+    border-color: #0cc0df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main_container .filters {
+    grid-area: f;
+    width: 210px;
+    justify-content: flex-start;
+    background-color: lightgray;
+
+    /* Stil für den linken Bereich */
+}
+
+.UserInfo {
+    grid-area: h;
+    height: 120px;
+    background-color: #0cc0df;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    align-content: flex-end;
+    /* Stil für den rechten Bereich */
+}
+
+nav.UserInfo {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+}
+
+nav.UserInfo .menu-item {
+    display: flex;
+    margin-right: 20px;
+    align-items: flex-end;
+}
+
+nav.UserInfo .submenu {
+    position: relative;
+
+}
+
+nav.UserInfo .submenu-content {
+    display: none;
+    position: absolute;
+    background-color: #f9f9f9;
+    min-width: 120px;
+    padding: 10px;
+}
+
+.main_container main {
+    grid-area: m;
+    align-self: center;
+}
+.username {
+    display: inline;
+}
+
+
+.logo {
+    grid-column: 1;
+    grid-row: 1;
+    width: auto;
+    height: 100px;
+}
+
+.blockTextSearch {
+    background-color: white;
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+}
+
+.searchHeader{
+    color: #000000;
+}
+
+.text-area {
+    height: 100px;
+}
+
+.blockSearch {
+    background-color: lightgray;
+    border-bottom: 1px solid rgba(0, 0, 0, 0);
+    padding-bottom: 10px;
+    margin-bottom: 10px;
+
+}
+
+.blockSearch h3 {
+    font-family: "Trebuchet MS", sans-serif;
+    align-items: center;
+}
+
+.searchTitle {
+    align-content: center;
+    /*Search headers*/
+}
+
+.searchAccordion {
+    display: none;
+}
+
+.searchAccordion.open {
+    display: block;
+}
+
+.searchButton {
+    /*Formatting*/
+}
+
+.containerLogin {
+    width: auto;
+    height: auto;
+    margin:  auto;
+    padding: 20px;
+    background-color: #ccc8c8;
+    border: 1px solid #0cc0df;
+    border-radius: 5px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.loginWindow {
+    margin-bottom: 20px;
+}
+
+.loginWindow h2 {
+    text-align: center;
+}
+
+.loginWindow label,
+.loginWindow input[type="text"],
+.loginWindow input[type="password"],
+.loginWindow input[type="submit"] {
+    display: block;
+    width: 200%;
+    margin-bottom: 15px;
+    text-align: center;
+}
+
+.loginWindow input[type="submit"] {
+    background-color: #0cc0df;
+    color: #fff;
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+}
+
+.loginWindow input[type="submit"]:hover {
+    background-color: #0056b3;
+}
+
+.loginButton {
+    display: block;
+    width: 200%;
+    margin-bottom: 15px;
+    text-align: center;
+    background-color: #0cc0df;
+}
+
+.registerButton {
+    background-color: #0cc0df;
+}
+
+.latestInteractions {
+    margin-top: 20px;
+}
+
+.latestInteractions > div {
+    display: flex;
+    align-items: flex-start;
+    margin-bottom: 10px;
+}
+
+.circle {
+    width: 60px;
+    height: 60px;
+    border-radius: 50%;
+    background-color: #fff;
+    color: #0cc0df;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+    font-size: 30px;
+    margin-right: 10px;
+}
+
+.fansOnlyBtn{
+    max-width: 120px;
+    max-height: 60px;
+    align-items: center;
+}
+
+.interaction {
+    background-color: #fff;
+    padding: 10px;
+    margin-left: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    flex: 1;
+}
+
+.product-article {
+    background-color: lightgray;
+    display: flex;
+    align-items: center;
+    border-radius: 16px;
+    padding: 5px;
+    width: 100%;
+    margin: 20px;
+}
+
+.content{
+    display: flex;
+    justify-content: space-between;
+    alignment: center;
+    width: 80%;
+    padding: 10px;
+}
+.image-wrapper {
+    padding: 10px;
+    min-width: 250px;
+    justify-content: center;
+    align-items: center;
+    display: flex;
+}
+
+.image {
+    border-radius: 16px;
+    max-height: 250px;
+    max-width: 250px;
+}
+
+.text {
+    flex-grow: 1;
+    padding-left: 10px;
+}
+
+.commentSection{
+    flex-direction: row;
+}
