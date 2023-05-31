@@ -2,6 +2,10 @@ package at.ac.fansonly;
 
 import java.io.*;
 
+import at.ac.fansonly.database.DataBaseConnection;
+import at.ac.fansonly.database.entities.UserEntity;
+import at.ac.fansonly.database.repos.UserRepo;
+import at.ac.fansonly.models.User;
 import jakarta.servlet.http.*;
 import jakarta.servlet.annotation.*;
 
@@ -10,11 +14,13 @@ public class HelloServlet extends HttpServlet {
     private String message;
 
     public void init() {
+
         message = "Hello World!";
     }
 
     public void doGet(HttpServletRequest request, HttpServletResponse response) throws IOException {
         response.setContentType("text/html");
+
 
         // Hello
         PrintWriter out = response.getWriter();

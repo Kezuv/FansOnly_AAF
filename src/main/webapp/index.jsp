@@ -16,8 +16,6 @@
 
 
 
-
-
     <div class="filters">
         <h1 class="searchHeader">Find the Right Fan!</h1>
 
@@ -126,7 +124,7 @@
                     </div>
                 </div>
                 <div class="article-btn">
-                    <button class="btn btn-light fansOnlyBtn">Details</button>
+                    <a href="index_with_content.jsp"><button class="btn btn-light fansOnlyBtn">Details</button></a>
                 </div>
             </div>
         </article>

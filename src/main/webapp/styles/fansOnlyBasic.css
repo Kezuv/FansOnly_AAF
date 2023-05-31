@@ -263,3 +263,7 @@ nav.UserInfo .submenu-content {
     flex-grow: 1;
     padding-left: 10px;
 }
+
+.commentSection{
+    flex-direction: row;
+}
