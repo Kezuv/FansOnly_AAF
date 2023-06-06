@@ -4,11 +4,10 @@ import at.ac.fansonly.database.repos.UserRepo;
 import at.ac.fansonly.models.User;
 import jakarta.annotation.ManagedBean;
 import jakarta.enterprise.context.ApplicationScoped;
+import jakarta.inject.Named;
 import jdk.jfr.Name;
 
-@ManagedBean
-@Name("UserBean")
-@ApplicationScoped
+@Named("")
 public class UserBean {
 
     public void init(){

@@ -1,0 +1,19 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="unnamed">
+    <output-path>$PROJECT_DIR$/out/artifacts/unnamed</output-path>
+    <root id="root">
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="lib">
+          <element id="library" level="project" name="Maven: org.primefaces:primefaces:8.0" />
+          <element id="library" level="project" name="Maven: com.j256.ormlite:ormlite-jdbc:6.1" />
+          <element id="library" level="project" name="javax.faces-2.3.7" />
+        </element>
+        <element id="directory" name="classes">
+          <element id="module-output" name="FansOnly" />
+          <element id="jpa-descriptors" facet="FansOnly/jpa/JPA" />
+        </element>
+      </element>
+      <element id="javaee-facet-resources" facet="FansOnly/web/Web" />
+    </root>
+  </artifact>
+</component>
